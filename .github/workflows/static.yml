@@ -34,7 +34,7 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Install phpDocumentor
         run: |
-          curl --silent --location="https://phpdoc.org/phpDocumentor.phar" > "phpDocumentor.phar"
+          curl --silent --location "https://phpdoc.org/phpDocumentor.phar" > "phpDocumentor.phar"
           chmod a+x phpdoc.phar
       - name: Generate Documentation
         run: php phpDocumentor.phar --directory="." --target="build"
